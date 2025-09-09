@@ -1,74 +1,71 @@
 def guardar_contactos_iniciales():
-    """Guarda los contactos de la imagen en el archivo agenda.txt."""
+    """Guarda los contactos iniciales en el archivo agenda.txt."""
     contactos = [
-{"CC","1001202162","JOAN SEBASTIAN BORDA CASTIBLANCO","3105885793","johansebastianborda@gmail.com"},
-{"CC","1015397949","DAVID ALEJANDRO	APARICIO ROMERO","3204308710","davidaar05@gmail.com"},
-{"CC","1016009825","MIGEL ESTEBAN	MARTINEZ VARON","3219404978","miguelmartinezvaron32143@gmail.com"},
-{"CC","1019989868","STEBAN	CARRIZOSA ORTEGON","3006898362","carrizosaortegon.steban@gmail.com"},
-{"CC","1028481891","DAVID SANTIAGO	CAMELO CRUZ","3193866413","dilanbcm@gmail.com"},
-{"CC","1029520748","JOSEPH NICOLAS	TORRES CASTELBLANCO","3122224003","josephnicolastorres6@gmail.com"},
-{"CC","1047041996","ANDRES CAMILO	GUARDIA ALTAMAR","3017852867","chamolocoporsiempre@gmail.com"},
-{"CC	1070384473	NATALIA	AVILAN LAROTTA	3105281043	nataliaavilan24@gmail.com"},
-{"CC	1141114537	OSCAR FELIPE	GUACANEME SANCHEZ	3125056545	guacanemeoscarfelipe@gmail.com"},
-{"CC	1142714477	DANNA VALENTINA	DIAZ GUALDRON	3229150145	dannadiazgualdron@gmail.com"},
-{"CC	1193552312	DIEGO ALEJANDRO	SANCHEZ LOPEZ	3026826919	hiphopclan99@gmail.com"},
-{"CC	80154727	MARIO DAVIS	AGUILLON PUENTES	3188676690	aguillondavis@gmail.com"},
-{"TI	1013117356	JULIAN ANDRES	MONROY MELO	3112237515	julianjamm321123@gmail.com"},
-{"TI	1028486643	SAMUEL ANDRES	PINZON MONROY	3203985749	yosoyanel02@gmail.com"},
-{"TI	1071914553	JHOJAN STIVEN	SILVA GARCIA	3115867655	jhojansilva0302@gmail.com"},
-{"TI	1072746935	JOHAN SEBASTIAN	RODRIGUEZ GONZALEZ	3053039737	johansebastian201107@gmail.com"},
-{"CC	1001329164	MISCHAELL ANDRES 	PULIDO SALDAÑA	3227336328	katerinaguilar12345@gmail.com"},
-{"CC	80166347	ERWIN	JOYA PULIDO	3196479318	ejoya7@soy.sena.edu.com"},
-{"CC  1013117179  DAVID SANTIAGO GIL CIFUENTES 3133568187 gilsantiagodepa@gmail.com"}
+        "Tipo de Documento: CC, Número de Documento: 1001202162, Nombre: JOAN SEBASTIAN, Apellidos: BORDA CASTIBLANCO, Celular: 3105885793, Correo Electrónico: johansebastianborda@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1015397949, Nombre: DAVID ALEJANDRO, Apellidos: APARICIO ROMERO, Celular: 3204308710, Correo Electrónico: davidaar05@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1016009825, Nombre: MIGEL ESTEBAN, Apellidos: MARTINEZ VARON, Celular: 3219404978, Correo Electrónico: miguelmartinezvaron32143@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1019989868, Nombre: STEBAN, Apellidos: CARRIZOSA ORTEGON, Celular: 3006898362, Correo Electrónico: carrizosaortegon.steban@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1028481891, Nombre: DAVID SANTIAGO, Apellidos: CAMELO CRUZ, Celular: 3193866413, Correo Electrónico: dilanbcm@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1029520748, Nombre: JOSEPH NICOLAS, Apellidos: TORRES CASTELBLANCO, Celular: 3122224003, Correo Electrónico: josephnicolastorres6@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1047041996, Nombre: ANDRES CAMILO, Apellidos: GUARDIA ALTAMAR, Celular: 3017852867, Correo Electrónico: chamolocoporsiempre@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1070384473, Nombre: NATALIA, Apellidos: AVILAN LAROTTA, Celular: 3105281043, Correo Electrónico: nataliaavilan24@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1141114537, Nombre: OSCAR FELIPE, Apellidos: GUACANEME SANCHEZ, Celular: 3125056545, Correo Electrónico: guacanemeoscarfelipe@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1142714477, Nombre: DANNA VALENTINA, Apellidos: DIAZ GUALDRON, Celular: 3229150145, Correo Electrónico: dannadiazgualdron@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1193552312, Nombre: DIEGO ALEJANDRO, Apellidos: SANCHEZ LOPEZ, Celular: 3026826919, Correo Electrónico: hiphopclan99@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 80154727, Nombre: MARIO DAVIS, Apellidos: AGUILLON PUENTES, Celular: 3188676690, Correo Electrónico: aguillondavis@gmail.com",
+        "Tipo de Documento: TI, Número de Documento: 1013117356, Nombre: JULIAN ANDRES, Apellidos: MONROY MELO, Celular: 3112237515, Correo Electrónico: julianjamm321123@gmail.com",
+        "Tipo de Documento: TI, Número de Documento: 1028486643, Nombre: SAMUEL ANDRES, Apellidos: PINZON MONROY, Celular: 3203985749, Correo Electrónico: yosoyanel02@gmail.com",
+        "Tipo de Documento: TI, Número de Documento: 1071914553, Nombre: JHOJAN STIVEN, Apellidos: SILVA GARCIA, Celular: 3115867655, Correo Electrónico: jhojansilva0302@gmail.com",
+        "Tipo de Documento: TI, Número de Documento: 1072746935, Nombre: JOHAN SEBASTIAN, Apellidos: RODRIGUEZ GONZALEZ, Celular: 3053039737, Correo Electrónico: johansebastian201107@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 1001329164, Nombre: MISCHAELL ANDRES, Apellidos: PULIDO SALDAÑA, Celular: 3227336328, Correo Electrónico: katerinaguilar12345@gmail.com",
+        "Tipo de Documento: CC, Número de Documento: 80166347, Nombre: ERWIN, Apellidos: JOYA PULIDO, Celular: 3196479318, Correo Electrónico: ejoya7@soy.sena.edu.co",
+        "Tipo de Documento: CC, Número de Documento: 1013117179, Nombre: DAVID SANTIAGO, Apellidos: GIL CIFUENTES, Celular: 3133568187, Correo Electrónico: gilsantiagodepa@gmail.com"
     ]
     try:
         with open("agenda.txt", "w", encoding="utf-8") as agenda_file:
             for contacto in contactos:
                 agenda_file.write(contacto + "\n")
-        print("Agenda inicial guardada.")
+        print("Agenda inicial guardada con los nuevos datos.")
     except Exception as e:
         print(f"Ocurrió un error al guardar la agenda: {e}")
 
 def buscar_contacto():
-    """Busca y muestra un contacto por número de teléfono."""
+    """Busca y muestra un contacto por número de documento o celular."""
     try:
-        telefono_buscar = input("Ingresa el número de teléfono que quieres buscar: ")
+        termino_buscar = input("Ingresa el número de documento o celular que quieres buscar: ")
         with open("agenda.txt", "r", encoding="utf-8") as agenda_file:
             encontrado = False
             print("\n--- Resultados de la búsqueda ---")
             for linea in agenda_file:
-                if telefono_buscar in linea:
+                if termino_buscar in linea:
                     print(linea.strip())
                     encontrado = True
                     break
             if not encontrado:
-                print(f"No se encontró un contacto con el número '{telefono_buscar}'.")
+                print(f"No se encontró un contacto con el término '{termino_buscar}'.")
     except FileNotFoundError:
         print("El archivo agenda.txt no se encontró.")
 
 def modificar_contacto():
-    """Modifica un contacto existente por su número de teléfono."""
+    """Modifica un contacto existente por su número de documento o celular."""
     try:
-        telefono_modificar = input("Ingresa el número del contacto que quieres modificar: ")
+        termino_modificar = input("Ingresa el número de documento o celular del contacto a modificar: ")
         with open("agenda.txt", "r", encoding="utf-8") as file:
             lineas = file.readlines()
         
         encontrado = False
-        nueva_linea = ""
         with open("agenda.txt", "w", encoding="utf-8") as file:
             for linea in lineas:
-                if telefono_modificar in linea:
+                if termino_modificar in linea:
                     print(f"Contacto encontrado: {linea.strip()}")
-                    nuevo_nombre = input("Ingresa el nuevo nombre completo: ")
-                    nuevo_telefono = input("Ingresa el nuevo número de teléfono: ")
-                    nueva_direccion = input("Ingresa la nueva dirección (o dejar en blanco): ")
-                    nuevo_correo = input("Ingresa el nuevo correo electrónico (o dejar en blanco): ")
+                    tipo_doc = input("Ingresa el nuevo Tipo de Documento: ")
+                    num_doc = input("Ingresa el nuevo Número de Documento: ")
+                    nombre = input("Ingresa el nuevo Nombre: ")
+                    apellidos = input("Ingresa los nuevos Apellidos: ")
+                    celular = input("Ingresa el nuevo Número de Celular: ")
+                    correo = input("Ingresa el nuevo Correo Electrónico: ")
                     
-                    nueva_linea = f"{nuevo_nombre}: Tel: {nuevo_telefono}"
-                    if nueva_direccion:
-                        nueva_linea += f", Dir: {nueva_direccion}"
-                    if nuevo_correo:
-                        nueva_linea += f", Correo: {nuevo_correo}"
+                    nueva_linea = f"Tipo de Documento: {tipo_doc}, Número de Documento: {num_doc}, Nombre: {nombre}, Apellidos: {apellidos}, Celular: {celular}, Correo Electrónico: {correo}"
                     
                     file.write(nueva_linea + "\n")
                     encontrado = True
@@ -78,30 +75,30 @@ def modificar_contacto():
         if encontrado:
             print("El contacto ha sido modificado exitosamente.")
         else:
-            print(f"No se encontró un contacto con el número '{telefono_modificar}'.")
+            print(f"No se encontró un contacto con el término '{termino_modificar}'.")
     
     except FileNotFoundError:
         print("El archivo agenda.txt no se encontró.")
         
 def eliminar_contacto():
-    """Elimina un contacto por su número de teléfono."""
+    """Elimina un contacto por su número de documento o celular."""
     try:
-        telefono_eliminar = input("Ingresa el número del contacto que quieres eliminar: ")
+        termino_eliminar = input("Ingresa el número de documento o celular del contacto a eliminar: ")
         with open("agenda.txt", "r", encoding="utf-8") as file:
             lineas = file.readlines()
         
         encontrado = False
         with open("agenda.txt", "w", encoding="utf-8") as file:
             for linea in lineas:
-                if telefono_eliminar not in linea:
+                if termino_eliminar not in linea:
                     file.write(linea)
                 else:
                     encontrado = True
         
         if encontrado:
-            print(f"El contacto con el número '{telefono_eliminar}' ha sido eliminado.")
+            print(f"El contacto con el término '{termino_eliminar}' ha sido eliminado.")
         else:
-            print(f"No se encontró un contacto con el número '{telefono_eliminar}'.")
+            print(f"No se encontró un contacto con el término '{termino_eliminar}'.")
     
     except FileNotFoundError:
         print("El archivo agenda.txt no se encontró.")
